@@ -29,6 +29,7 @@ urlpatterns = [
     path('cart/', include('st_cart.urls')),
     path('checkout/', include('checkout.urls')),
     path('post/', include('post.urls')),
+    path('product/', include('product.urls')),
 ]
 
 urlpatterns+= static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)  #load image
